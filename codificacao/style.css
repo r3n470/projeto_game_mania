@@ -23,7 +23,7 @@ body {
 }
 
 .botaoPesquisa {
-    width: 35px;
+    width: 2.5%;
 }
 
 .loginCompras {
@@ -32,12 +32,12 @@ body {
     align-items: center;   
 }
 
-.carrinhoDeCompras {
-    width: 35px;
+.login {
+    width: 100%;
 }
 
 .sacolaDeCompras {
-    width: 35px;
+    width: 53%;
 }
 
 .menuPlataformas {
@@ -161,9 +161,7 @@ body {
 }
 
 
-/*Footer*/
-
-
+/*NEWSLETTER*/
 
 .rodapePrincipalEmail {
 	margin-top: 2%;
@@ -172,7 +170,6 @@ body {
 	padding: 2% 20%;
     color: var(--branco);   
 }
-
 
 .rodapePrincipal-contatoForm label[for=email-contato] {
 	font-weight: bold;
@@ -196,7 +193,6 @@ body {
 	cursor: pointer;	
 }
 
-
 .rodapePrincipal-contatoForm-emailInput {
 	outline: 0;
 	border: 1% solid var(--preto_max);
@@ -216,17 +212,30 @@ body {
 }
 
 
-/*Footer 2 Institucional*/
+/*RODAPÉ*/
 
-.rodapeInstitucional {
-    background-color: var(--preto_max);
-    color: var(--branco);
-    max-width: 100%;
-    height: 250px;
-
+.rodapeFinal {
+    display: inline-flex;
+    background-color: #000000;
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 1% 1% 2% 1%;
+    width: 98%;
 }
 
-.navegacaoRodapeInstitucional {
-   
+.menusInstitutional {
+    display: flex;
+}
 
+.bandeiras {
+    display: flex;
+}
+
+.redesSociais {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes {
+    display: flex;
 }
