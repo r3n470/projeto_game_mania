@@ -8,45 +8,74 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 }
+
+
+/*versão desktop & tablet*/
 /*Header*/
-.cabecalho {
+
+@media screen and (min-width: 481px) {
+.cabecalhos {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;}
+}
+
+@media screen and (min-width: 481px) {
+.cabecalhoPrincipal {
     background-color: var(--preto_max);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;}
 }
 
-.logo {
-    width: 15%;
-    margin-top: 2%;
-    margin-left: 2%;
+@media screen and (min-width: 481px) {
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    align-items: center;}
 }
 
-.botaoPesquisa {
-    width: 2.5%;
-}
-
+@media screen and (min-width: 481px) {
 .loginCompras {
     display: flex;
     margin-right: 3%;
-    align-items: center;   
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;}
 }
 
-.login {
-    width: 100%;
-}
-
-.sacolaDeCompras {
-    width: 53%;
-}
-
+@media screen and (min-width: 481px) {
 .menuPlataformas {
     display: flex;
     background-color: var(--vermelho1);
     justify-content: space-around;
-    align-items: center; 
-    padding: 0% 10% 0% 10%;
- }
+    align-items: center;
+    padding: 0% 10%;
+    flex-direction: row;
+    flex-wrap: nowrap;}
+}
+
+.logo {
+    width: 50%;
+    margin-top: 2%;
+}
+
+.botaoPesquisa {
+    width: 5.5%;
+}
+
+.login {
+   width: 100%;
+    }
+    
+.sacolaDeCompras {
+    width: 53%;
+    }
 
 .logoxbox {
     width: 25px;
@@ -78,28 +107,33 @@ body {
     width: 100%;
 }
 
+@media screen and (min-width: 481px) {
 .bannerDestaque {
-    display: flex;
-    margin: 2%;
-    gap: 2%;    
-    margin: 2% auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2%;}
 }
 
 #buttonImages:hover {
     transform: scale(1.1);
 }
 
-.bannerDestaqueTamanho{
+.bannerDestaqueTamanho {
     max-width: 90%;
     border-radius: 1%;
     margin-left: 5%;
 }
 
 .destaquePlataforma {
+ display: grid;
+}
+
+.escolhaPlataforma {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 
 .plataf-imagens {
     max-width: 80%;
@@ -114,24 +148,35 @@ body {
    width: 100%;
 }
 
-.produtos li {
+@media screen and (min-width: 481px) {
+    .galeriaProdutos {
+    padding: 30px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;}
+    }
+
+.produtos {
     display: inline-grid;
     text-align: center;
-    width: 25%;
-    vertical-align: top;
-    margin: 2% 2% 1.2% 5%;
-    padding: 1% 0%;
-    box-sizing: border-box;
-    border: 2px solid var(--preto_max);
-    border-radius: 10px;
+    max-width: 100%;
+    
     justify-content: center;
     align-items: center;
     justify-items: center;
     align-content: stretch;
 
-}
+    vertical-align: top;
+    margin: 2% 2% 2.2% 0%;
+    padding: 1% 0%;
+}  
+  
 
-.produtos li:hover h2 {
+
+
+.produtos:hover h2 {
 	font-size: 70%;
     opacity: 0.2;
 }
@@ -155,14 +200,9 @@ body {
     width: 50%;
 }
         
-.produtos li:hover {
-    border-color: var(--vermelho1);
-    transform: scale(1.1);
-}
 
 
 /*NEWSLETTER*/
-
 .rodapePrincipalEmail {
 	margin-top: 2%;
 	background: var(--azulEmail);
@@ -199,7 +239,7 @@ body {
 	box-sizing: border-box;
 }
 
-.rodapePrincipalEmail .container {
+.rodapePrincipalEmail  {
     display: flex;
     justify-content: space-around;
 }
@@ -214,28 +254,155 @@ body {
 
 /*RODAPÉ*/
 
-.rodapeFinal {
+
+.rodape {
     display: inline-flex;
-    background-color: #000000;
-    color: #ffffff;
-    justify-content: space-between;
-    padding: 1% 1% 2% 1%;
-    width: 98%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--preto_max);
+    color: var(--branco);
+    align-items: flex-start;
+    padding: 1% 0% 3% 0%;
 }
 
-.menusInstitutional {
-    display: flex;
+
+.rodapeFinal {
+    display: grid;
 }
 
-.bandeiras {
-    display: flex;
+
+.metodoDePagamento {
+    display: grid;
+   
 }
 
 .redesSociais {
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 
-.redes {
+/* versão mobile*/
+/*header*/
+
+@media screen and (max-width: 480PX) {
+    .cabecalhos {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        flex-wrap: wrap;}
+    }
+    
+    @media screen and (max-width: 480PX) {
+    .cabecalhoPrincipal {
+        background-color: var(--preto_max);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;}
+    }
+    
+    @media screen and (max-width: 480PX) {
+    .cabecalho {
+        display: flex;
+        justify-content: flex-end;
+        width: 72%;
+        flex-direction: row;
+        flex-wrap: nowrap;}
+    }
+    
+    @media screen and (max-width: 480PX) {
+    .loginCompras {
+        display: flex;
+        margin-right: 0%;
+        width: 15%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;}
+    }
+    
+    @media screen and (max-width: 480px) {
+    .menu {display: none;}
+    }
+    
+    /*main*/
+    @media screen and (max-width: 480px) {
+    .plataf-imagens {
+        margin: 10%;}
+    }
+    
+    
+    @media screen and (max-width: 480px) {
+    .bannerDestaque { 
+        display: grid;
+        flex-direction: column;
+        margin-top: 3%;}
+    } 
+    
+    
+    @media screen and (max-width: 480px) {
+        .bannerDestaque1 {display: none;}
+    }
+    
+    @media screen and (max-width: 480PX) {
+    .escolhaPlataforma {flex-direction: column;}
+    }
+    
+    @media screen and (max-width: 480PX) {
+    .bannerPrincipal {display: none;}
+    }
+    
+    @media screen and (max-width: 480px) {
+    .galeriaProdutos {
+    padding: 30px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+    }
+
+   
+@media screen and (max-width: 480px) {
+.rodapeFinal {
     display: flex;
+    flex-direction: column;
+    align-items: center;}
 }
+
+
+
+@media screen and (max-width: 480px) {
+.rodape {
+        display: flex;
+        width: 100%;
+        background-color: var(--preto_max);
+        color: var(--branco);
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+.lista { visibility: hidden;}
+}
+
+@media screen and (max-width: 480px) {
+.bandeiras { visibility: hidden;}
+}
+
+@media screen and (max-width: 480px) {
+.metodoDePagamento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -11%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .redesSociais li {visibility: hidden;}
+    }
