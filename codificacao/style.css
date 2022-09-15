@@ -7,55 +7,68 @@
 }
 body {
 	font-family: 'Montserrat', sans-serif;
+	width: 100%;
 }
 
 
 /*versão desktop & tablet*/
 /*Header*/
 
-@media screen and (min-width: 481px) {
+
 .cabecalhos {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-    flex-wrap: wrap;}
+ display: flex;
+ flex-direction: column;
 }
 
-@media screen and (min-width: 481px) {
 .cabecalhoPrincipal {
-    background-color: var(--preto_max);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;}
+ background-color: var(--preto_max);
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ height: 173px;
 }
 
-@media screen and (min-width: 481px) {
+
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    width: 34%;
-    align-items: center;}
+ display: flex;
+ justify-content: space-around;
+ width: 50%;
+ align-items: center;
 }
 
-.areaCliente{
-display: flex;
+.logo {
+ width: 170px;
+ margin-top: 4%;
 }
 
-
-@media screen and (min-width: 481px) {
-.loginCompras {
-    display: flex;
-    margin-right: 3%;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;}
+.areaCliente {
+ width: 50%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: flex-end;
+ margin-right: 5%;
 }
 
+.comprasLogin {
+ display: flex;
+ align-items: center;
+}
 
-@media screen and (min-width: 481px) {
+.loginTamanho {
+ width: 100px;
+}
+
+.sacolaDeCompras {
+ width: 51px;
+}
+
+.botaoLogin {
+ background-color: red;
+ border-color: red;
+ width:0px;
+}
+
 .menuPlataformas {
     display: flex;
     background-color: var(--vermelho1);
@@ -63,43 +76,16 @@ display: flex;
     align-items: center;
     padding: 0% 10%;
     flex-direction: row;
-    flex-wrap: nowrap;}
-}
-
-
-
-.logo {
-    width: 50%;
-    margin-top: 2%;
-}
-
-.botaoPesquisa {
-    width: 5.5%;
-}
-
-.login {
-    width: 315%;	
-}
-
-
-
-.botaoLogin {
-    background-color: black;
-    border-color: black;
-}
-    
-.sacolaDeCompras {
-    width: 248%;
-    }
-
-.logoxbox {
-    width: 25px;
+    flex-wrap: nowrap;
 }
 
 .menuPlataformas li:hover {
     transform: scale(2);
 }
 
+.logoxbox {
+    width: 25px;
+}
 
 .logonintendo {
     width: 30px;
@@ -119,24 +105,21 @@ display: flex;
 
 /*Main*/
 
-.bannerpromo {
+.bannerPromo {
     width: 100%;
 }
 
-@media screen and (min-width: 481px) {
 .bannerDestaque {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 2%;}
+    margin: 2%;
 }
-
-
 
 .bannerDestaqueTamanho {
     max-width: 90%;
     border-radius: 1%;
     margin-left: 5%;
-}
+  }
 
 .bannerDestaqueTamanho:hover {
     transform: scale(1.1);
@@ -170,15 +153,14 @@ display: flex;
    width: 100%;
 }
 
-@media screen and (min-width: 481px) {
-    .galeriaProdutos {
+.galeriaProdutos {
     padding: 30px;
     justify-content: center;
     justify-items: center;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;}
-    }
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .produtos {
     display: inline-grid;
@@ -195,9 +177,6 @@ display: flex;
     padding: 1% 0%;
 }  
   
-
-
-
 .produtos:hover h2 {
 	font-size: 70%;
     opacity: 0.2;
@@ -278,14 +257,14 @@ display: flex;
 
 
 .rodape {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     width: 100%;
     background-color: var(--preto_max);
     color: var(--branco);
-    align-items: flex-start;
     padding: 1% 0% 3% 0%;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 
@@ -303,144 +282,163 @@ display: flex;
     display: grid;
 }
 
+
+
+
 /* versão mobile*/
 /*header*/
 
-@media screen and (max-width: 480PX) {
-    .cabecalhos {
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-        flex-wrap: wrap;}
-    }
-    
-    @media screen and (max-width: 480PX) {
- .cabecalhoPrincipal {
+@media screen and (max-width: 480px) {
+.cabecalhos {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.cabecalhoPrincipal {
     background-color: var(--preto_max);
     display: flex;
     align-items: center;
     justify-content: space-around;
     align-content: space-around;
     flex-direction: row;
-    flex-wrap: nowrap;}
+    flex-wrap: nowrap;
+}
+
+.logo {
+  width: 70%;
+  margin-top: 4%;
+}
+
+.botaoMenuLateral {
+    margin-left: 2%;
+    width: 25%;
 }
     
-    @media screen and (max-width: 480px) {
-    .cabecalho {
+ 
+.cabecalho {
     display: flex;
     justify-content: space-around;
-    width: 70%;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-}
+    width: 50%;
 }
 
-@media screen and (max-width: 480PX) {
 .botaoPesquisa {
-    display: none;}
+ display: none;
 }
     
-    @media screen and (max-width: 480PX) {
-    .loginCompras {
-        display: flex;
-        margin-right: 0%;
-        width: 90%;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;}
-    }
+.areaCliente {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2%;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.comprasLogin {
+    display: flex;
+}
+
+
+.sacolaDeCompras {
+ width: 25px;
+}
+
+.loginTamanho {
+    width: 56px;
+}
     
-    @media screen and (max-width: 480px) {
-    .menu {display: none;}
-    }
+.menu {
+ display: none;
+}
     
-    /*main*/
-    @media screen and (max-width: 480px) {
-    .plataf-imagens {
-        margin: 10%;}
-    }
+/*main*/
+
+.plataf-imagens {
+ margin: 10%;
+}
+
+.bannerDestaque { 
+ display: grid;
+ flex-direction: column;
+ margin-top: 3%;
+}
+
+
+
+.bannerDestaque1 {
+ display: none;
+}
+
+.bannerDestaque2 {
+  width: 200%;
+}
     
+.bannerDestaqueTamanho {
+ width: 100%;
+}
+
+.escolhaPlataforma {
+flex-direction: column;
+}
+
+.bannerPrincipal {
+display: none;
+}
     
-    @media screen and (max-width: 480px) {
-    .bannerDestaque { 
-        display: grid;
-        flex-direction: column;
-        margin-top: 3%;}
-    } 
-    
-    
-    @media screen and (max-width: 480px) {
-        .bannerDestaque1 {display: none;}
-    }
-    
-    @media screen and (max-width: 480PX) {
-    .escolhaPlataforma {flex-direction: column;}
-    }
-    
-    @media screen and (max-width: 480PX) {
-    .bannerPrincipal {display: none;}
-    }
-    
-    @media screen and (max-width: 480px) {
-    .galeriaProdutos {
-    padding: 30px;
-    justify-content: center;
-    justify-items: center;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
-    }
+.galeriaProdutos {
+ padding: 30px;
+ justify-content: center;
+ justify-items: center;
+ display: grid;
+ grid-gap: 30px;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
    
-@media screen and (max-width: 480px) {
 .rodapeFinal {
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
 }
 
 
-
-@media screen and (max-width: 480px) {
 .rodape {
-        display: flex;
-        width: 100%;
-        background-color: var(--preto_max);
-        color: var(--branco);
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+ display: flex;
+ width: 100%;
+ background-color: var(--preto_max);
+ color: var(--branco);
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-.lista { visibility: hidden;}
+.lista { 
+visibility: hidden;
 }
 
-@media screen and (max-width: 480px) {
-.bandeiras { visibility: hidden;}
+.bandeiras { 
+visibility: hidden;
 }
 
-@media screen and (max-width: 480px) {
 .metodoDePagamento {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: -11%;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -11%;
 }
 
-@media screen and (max-width: 480px) {
-    .redesSociais li {visibility: hidden;}
-    }
-
-
+.redesSociais li {
+ visibility: hidden;
+}
+}
 
 /* Login com redes sociais ou manual*/
-
-
 
   /* The Modal (background) */
   
@@ -457,11 +455,7 @@ display: flex;
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	padding-top: 60px;	
   }
-  
-  
-  	
-  
-  
+   
   /* Botão de fechar o container */
   .close {
 	/* Position it in the top right corner outside of the modal */
@@ -496,8 +490,6 @@ display: flex;
 	to {transform: scale(1)}
   } 	
  
-
-
   * {box-sizing: border-box}
 
 /* style the container */
@@ -545,13 +537,13 @@ input:hover,
 
 /* style the submit button */
 input[type=submit] {
-  background-color: orag;
+  background-color: rgb(248, 169, 23);
   color: white;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #262563;
 }
 
 /* Two-column layout */
@@ -601,6 +593,9 @@ input[type=submit]:hover {
   background-color: blue;
   border-radius: 0px 0px 4px 4px;
 }
+
+
+
 
 /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 480px) {
