@@ -641,7 +641,8 @@ input[type=submit]:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: red;
+    background-color: black;
+    background-image: linear-gradient(black,red);
     overflow-x: hidden;
     padding-top: 10px;
     transition: 0.3s;
