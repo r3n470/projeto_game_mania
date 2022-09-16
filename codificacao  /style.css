@@ -305,13 +305,11 @@ body {
     align-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 80px;
-    padding-top: 0%;
 }
 
 .logo {
     width: 70%;
-    margin-top: 13%;
+    margin-top: 4%;
 }
 
 	
