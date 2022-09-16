@@ -305,11 +305,12 @@ body {
     align-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
+    height: 80px;
 }
 
 .logo {
   width: 70%;
-  margin-top: 4%;
+  margin-top: 12%;
 }
 
 .botaoMenuLateral {
