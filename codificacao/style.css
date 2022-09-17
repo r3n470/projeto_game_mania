@@ -1,20 +1,27 @@
 :root {
-    --preto_max:#080000;
-    --vermelho1:#f80000;
-    --vermelho2:#b30000;
-    --branco:#FFFFFF;   
-    --azulEmail: #3104B4;
+  --preto_max:#080000;
+  --vermelho1:#f80000;
+  --vermelho2:#b30000;
+  --branco:#FFFFFF;   
+  --azulEmail: #3104B4;
+  --azulFacebook: #3B5998;
+  --azulTwitter: #55ACEE;
+  --vermelhoGoogle:#dd4b39;
+  --botaoEnviar: #FF9900;
+  --botaoEnviarHover: #262563;
+  --corTextoVertLine: #f1f1f1;
+  --bordaVertiLine: #ccc;
+  --backgoundContainer:#f2f2f2; 
+  --cinzamMenuLateral: #878282; 
 }
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 }
 
-
 /*versão desktop & tablet*/
 /*Header*/
-
-
 .cabecalhos {
  display: flex;
  flex-direction: column;
@@ -27,7 +34,6 @@ body {
  flex-direction: row;
  height: 173px;
 }
-
 
 .cabecalho {
  display: flex;
@@ -64,8 +70,8 @@ body {
 }
 
 .botaoLogin {
- background-color: red;
- border-color: red;
+ background-color: var(--vermelho1);
+ border-color: var(--vermelho1);
  width:0px;
 }
 
@@ -104,7 +110,6 @@ body {
 }
 
 /*Main*/
-
 .bannerPromo {
     width: 100%;
 }
@@ -166,12 +171,10 @@ body {
     display: inline-grid;
     text-align: center;
     max-width: 100%;
-    
     justify-content: center;
     align-items: center;
     justify-items: center;
     align-content: stretch;
-
     vertical-align: top;
     margin: 2% 2% 2.2% 0%;
     padding: 1% 0%;
@@ -201,8 +204,6 @@ body {
     width: 50%;
 }
         
-
-
 /*NEWSLETTER*/
 .rodapePrincipalEmail {
 	margin-top: 2%;
@@ -254,8 +255,6 @@ body {
 
 
 /*RODAPÉ*/
-
-
 .rodape {
     display: flex;
     flex-direction: row;
@@ -266,7 +265,6 @@ body {
     justify-content: space-around;
     align-items: flex-start;
 }
-
 
 .rodapeFinal {
     display: grid;
@@ -283,11 +281,8 @@ body {
 }
 
 
-
-
-/* versão mobile*/
+                                              /* versão mobile*/
 /*header*/
-
 @media screen and (max-width: 480px) {
 .cabecalhos {
     display: flex;
@@ -295,7 +290,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
 }
-
 
 .cabecalhoPrincipal {
     background-color: var(--preto_max);
@@ -309,8 +303,8 @@ body {
 }
 
 .logo {
-  width: 70%;
-  margin-top: 12%;
+    width: 100px;
+    margin-top: 12%;
 }
 
 .botaoMenuLateral {
@@ -345,7 +339,6 @@ body {
     display: flex;
 }
 
-
 .sacolaDeCompras {
  width: 25px;
 }
@@ -359,7 +352,6 @@ body {
 }
     
 /*main*/
-
 .plataf-imagens {
  margin: 10%;
 }
@@ -369,8 +361,6 @@ body {
  flex-direction: column;
  margin-top: 3%;
 }
-
-
 
 .bannerDestaque1 {
  display: none;
@@ -401,7 +391,6 @@ display: none;
  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-   
 .rodapeFinal {
     display: flex;
     flex-direction: column;
@@ -439,43 +428,42 @@ visibility: hidden;
 }
 }
 
-/* Login com redes sociais ou manual*/
+                                                    /* Login com redes sociais ou manual*/
 
-  /* The Modal (background) */
-  
+  /* O Modal (background) */  
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+	display: none; /* Oculto por padrão */
+	position: fixed; /*Fique no lugar */
+	z-index: 1; /* Sente-se em cima */
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	width: 100%; /* Largura completa */
+	height: 100%; /* Altura toda*/
+	overflow: auto; /* Ative a rolagem, se necessário */
+	background-color: rgb(0, 0, 0); /* Cor alternativa */
+	background-color: rgba(0,0,0,0.4); /* Preto com opacidade*/
 	padding-top: 60px;	
   }
    
   /* Botão de fechar o container */
   .close {
-	/* Position it in the top right corner outside of the modal */
-	position: absolute;
-	right: 25px;
-	top: 0;
-	color: #000;
-	font-size: 35px;
-	font-weight: bold;
-  }
+	/* Posicione-o no canto superior direito fora do modal */  
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #f00;
+    font-size: 35px;
+    font-weight: bold;
+}
   
-  /* Close button on hover */
+  /* Botão Fechar ao passar o mouse */
   .close:hover,
   .close:focus {
 	color: red;
 	cursor: pointer;
   }
   
-  /* Add Zoom Animation */
+  /* Adicionar animação de zoom */
   .animate {
 	-webkit-animation: animatezoom 0.6s;
 	animation: animatezoom 0.6s
@@ -493,26 +481,36 @@ visibility: hidden;
  
   * {box-sizing: border-box}
 
-/* style the container */
+/* estilize o container*/
 .container {
   position: relative;
-  border-radius: 5px;
+  border-radius: 5px 5px  0px 0px;
   background-color: #f2f2f2;
   padding: 20px 0 20px 0;
 }
 
-/* style inputs and link buttons */
+@media screen and (min-width: 1064px) {
+.container {
+  border-radius: 5px 5px  0px 0px;
+  background-color: #f2f2f2;
+  padding: 1%;
+  margin-right: 25%;
+  margin-left: 25%;}
+}
+
+/* entradas de estilo e botões de link */
 input,
 .btn {
   width: 100%;
   padding: 12px;
-  border: none;
+  border-color: azure;
   margin: 5px 0;
   opacity: 0.85;
   display: inline-block;
   font-size: 17px;
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
+  border-radius: 5px;
 }
 
 input:hover,
@@ -522,32 +520,32 @@ input:hover,
 
 /* add appropriate colors to fb, twitter and google buttons */
 .fb {
-  background-color: #3B5998;
-  color: white;
+  background-color: var(--azulFacebook);
+  color: var(--branco);
 }
 
 .twitter {
-  background-color: #55ACEE;
-  color: white;
+  background-color: var(--azulTwitter);
+  color: var(--branco);
 }
 
 .google {
-  background-color: #dd4b39;
-  color: white;
+  background-color: var(--vermelhoGoogle);
+  color: var(--branco);
 }
 
-/* style the submit button */
+/* estilize o botão enviar */
 input[type=submit] {
-  background-color: rgb(248, 169, 23);
-  color: white;
+  background-color: var(--botaoEnviar);
+  color:var(--branco);
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #262563;
+  background-color: var(--botaoEnviarHover);
 }
 
-/* Two-column layout */
+/* Layout de duas colunas*/
 .col {
   float: left;
   width: 50%;
@@ -556,79 +554,93 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
+/* Limpar floats após as colunas */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* vertical line */
+/* Linha vertical (Vertical Line) */
 .vl {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  border: 2px solid #ddd;
-  height: 175px;
 }
 
-/* text inside the vertical line */
+/* texto dentro do vertical line */
 .inner {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
+  background-color: var(--corTextoVertLine);
+  border: 1px solid var(--bordaVertiLine);
   border-radius: 50%;
   padding: 8px 10px;
 }
 
-/* hide some text on medium and large screens */
+/* ocultar algum texto em telas médias e grandes */
 .hide-md-lg {
   display: none;
 }
 
-/* bottom container */
+/* botão container inferior (esqueceu senha- criar conta */
 .bottom-container {
   text-align: center;
-  background-color: blue;
+  background-color: var(--azulEmail);
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 1064px) {
+  .bottom-container {
+    text-align: center;
+    background-color: blue;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 25%;
+    margin-right: 25%}
+  }  
 
 
 
-/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+/* Layout responsivo - quando a tela tiver menos de 450px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
 @media screen and (max-width: 480px) {
+  .container {
+    border-radius: 5px 5px  0px 0px;
+    background-color: var(--backgoundContainer);
+    padding: 1%;
+    margin: 5% 1% 1% 1%;
+  }
+
   .col {
     width: 100%;
     margin-top: 0;
   }
-  /* hide the vertical line */
+  /*ocultar a vertical line */
   .vl {
     display: none;
   }
-  /* show the hidden text on small screens */
+  /* mostrar o texto oculto em telas pequenas */
   .hide-md-lg {
     display: block;
     text-align: center;
   }
+  .bottom-container {
+    text-align: center;
+    background-color: var(--azulEmail);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0px;
+  }
+
 }
 
-
-
-/* configuração menu lateral - mobile */
-
-
+                                          /* configuração menu lateral - mobile */
 @media screen and (min-width: 481px) {
 .botaoMenuLateral {
    display: none;}
 
 }
 
-
- /* The side navigation menu */
-
+ /* O menu de navegação lateral */
 .menuLateral {
     display: flex;
     height: 100%;
@@ -637,8 +649,8 @@ input[type=submit]:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
-    background-image: linear-gradient(black,red);
+    background-color: var(--preto_max);
+    background-image: linear-gradient(var(--preto_max), var(--cinzamMenuLateral));
     overflow-x: hidden;
     padding-top: 10px;
     transition: 0.3s;
@@ -651,9 +663,7 @@ input[type=submit]:hover {
   align-self: center;
 }
 
-/* The navigation menu links */
-
-
+/* Os links do menu de navegação */
 .menuLateral a {
     padding: 20px 0px 20px 20px;
     text-decoration: none;
@@ -667,16 +677,12 @@ input[type=submit]:hover {
 	width: 10%;
 }
 
-/* When you mouse over the navigation links, change their color */
-
-
+/* Ao passar o mouse sobre os links de navegação, altere sua cor */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: var(--corTextoVertLine);
 }
 
-/* Position and style the close button (top right corner) */
-
-
+/* Posicione e estilize o botão Fechar (canto superior direito) */
 .menuLateral .closebtn {
   position: absolute;
   top: 0;
@@ -685,19 +691,147 @@ input[type=submit]:hover {
   margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-
-
+/* Conteúdo da página de estilo - use isso se quiser empurrar o conteúdo da página para a direita ao abrir a navegação lateral */
 #main {
   transition: margin-left .5s;
   padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* Em telas menores, onde a altura é menor que 450px, altere o estilo do sidenav (menos preenchimento e tamanho de fonte menor) */
 @media screen and (max-height: 450px) {
   .menuLateral {padding-top: 15px;}
   .menuLateral a {font-size: 18px;}
 } 
 
+/* config página login esqueceu a senha */
 
+.form {
+	margin:  40px 0;
+	margin-left: 1%;
+}
 
+form label, form legend {
+	display:  block;
+	font-size:  18px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display:  block;
+	margin:  0 0 20px;
+	padding:  10px 25px;
+	width:  50%;
+}
+
+.checkbox {
+	margin:  20px 0;
+}
+
+.enviar {
+	width:  15%;
+	padding:  15px 0;
+	background:  var(--botaoEnviar);
+	color:  var(--branco);
+	font-weight:  bold;
+	font-size:  18px;
+	border:  none;
+	border-radius:  5px;
+	transition: 1s all;
+	cursor:  pointer;
+}
+
+.enviar:hover {
+    background: var(--azulEmail);
+    color: var(--branco);
+    transform: scale(1.1);
+}
+
+.dadosLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+.resetarSenha {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  background-color: var(--backgoundContainer);
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.contatoReset {
+ display:flex; 
+ flex-direction: row;
+ justify-content: flex-start;
+}
+
+                                                    /* versao mobile  */
+
+@media screen and (max-width: 481px) {  
+.resetarSenha {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    background-color: var(--backgoundContainer);
+    padding: 1%;
+    align-items: center;
+    box-shadow: 0px 0px 0px 15px var(--cinzamMenuLateral);
+    border-radius: 5px;
+}
+
+.dadosLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.manContatos {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 80%;
+}
+
+.contatoReset {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.enviar {
+    width: 50%;
+    padding: 15px 0;
+    background: var(--botaoEnviar);
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remover sublinhado das âncoras */
+  text-align: center;}
+}

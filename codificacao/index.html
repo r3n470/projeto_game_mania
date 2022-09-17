@@ -2,283 +2,225 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAME MANIA | Você no Controle</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="imagem/png" href="img/icones/logofivicon.jpg" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <!--icone na aba do navegador-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME MANIA | Você no Controle</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="login.html">
+  <link rel="icon" type="imagem/png" href="img/icones/logofivicon.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!--icone na aba do navegador-->
 </head>
 
 <body>
- <header class="cabecalhos">
-        <section class="cabecalhoPrincipal">
- <div id="menuLateralMobile" class="menuLateral">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <img src="img/icones/logoprincipal.svg" alt="Logotipo da Loja" class="menuLateralLogo">
-  <a href="#"><img src="img/icones/logotipo-do-xbox 2.svg" alt="Botão de Link Xbox" class="iconeMenuLateral"> Xbox</a>
-  <a href="#"><img src="img/icones/logoplaystation.png" alt="Botão de link playstation" class="iconeMenuLateral"> Playstation</a>
-  <a href="#"><img src="img/icones/logonintendo.png" alt="botão de Link Nintendo" class="iconeMenuLateral"> Nintendo</a>
-  <a href="#"><img src="img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo" class="iconeMenuLateral"> Informática</a>
-  <a href="#"><img src="img/icones/lgotipocategorias.svg" alt="botão de link categorias" class="iconeMenuLateral"> Categoria</a>
-</div>
+  <header class="cabecalhos">
+    <section class="cabecalhoPrincipal">
+      <div id="menuLateralMobile" class="menuLateral">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="img/icones/logoprincipal.svg" alt="Logotipo da Loja" class="menuLateralLogo">
+        <a href="#"><img src="img/icones/logotipo-do-xbox 2.svg" alt="Botão de Link Xbox" class="iconeMenuLateral">Xbox</a>
+        <a href="#"><img src="img/icones/logoplaystation.png" alt="Botão de link playstation" class="iconeMenuLateral">Playstation</a>
+        <a href="#"><img src="img/icones/logonintendo.png" alt="botão de Link Nintendo" class="iconeMenuLateral">Nintendo</a>
+        <a href="#"><img src="img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo" class="iconeMenuLateral"> Informática</a>
+        <a href="#"><img src="img/icones/lgotipocategorias.svg" alt="botão de link categorias" class="iconeMenuLateral">Categoria</a></div>
 
-<!-- Use any element to open the sidenav -->
+      <!-- Use qualquer elemento para abrir a navegação lateral-->
+        <a class="botaoMenuLateral" onclick="openNav()"><img src="img/icones/menuLateral.svg" alt="Botão de menu"></a>
+      <div class="cabecalho">
+        <a href="index.html"><img src="img/icones/logoprincipal.svg" class="logo"></a>
+        <img src="img/icones/lupa.svg" alt="icone de lupa para pesquisar" class="botaoPesquisa">
+      </div>
 
+      <div class="areaCliente">
+        <div class="comprasLogin">
+          <a href="#"><img src="img/icones/sacola4.svg" alt="icone sacola" class="sacolaDeCompras"></a>
+          <a onclick="document.getElementById('id01').style.display='block'" style=><img src="img/icones/login (2).svg" alt="Botão login" class="loginTamanho"></a>
+        </div>
+      </div>
 
-<a class="botaoMenuLateral" onclick="openNav()"><img src="img/icones/menuLateral.svg" alt="Botão de menu"></a>  
-
-
-
-
-            <div class="cabecalho">
-                <img src="img/icones/logoprincipal.svg" class="logo">
-                <img src="img/icones/lupa.svg" alt="icone de lupa para pesquisar" class="botaoPesquisa">
-	        </div>
-	
-           
-    		<div class="areaCliente">
-                    <div class="comprasLogin">	
-		    	<a href="#"><img src="img/icones/sacola4.svg" alt="icone sacola" class="sacolaDeCompras"></a>
-    		    	<a onclick="document.getElementById('id01').style.display='block'" style=""><img src="img/icones/login (2).svg" alt="Botão login" class="loginTamanho"></a>
-		    </div>
-	        </div>
-
-
-		<!-- Button to open the modal login form -->
-			
-	
-			<!-- The Modal -->
-			<div id="id01" class="modal">
-				<span onclick="document.getElementById('id01').style.display='none'"
-			  class="close" title="Close Modal">&times;</span>
-			  
-			  
-			  <div class="container">
-				  <form action="/action_page.php">
-					<div class="row">
-					  <h2 style="text-align:center">Faça login com as redes sociais ou manualmente</h2>
-					  <div class="vl">
-						<span class="vl-innertext">ou</span>
-					  </div>
-				
-					  <div class="col">
-						<a href="#" class="fb btn">
-						  <i class="fa fa-facebook fa-fw"></i> Entrar com o Facebook
-						</a>
-						<a href="#" class="twitter btn">
-						  <i class="fa fa-twitter fa-fw"></i> Entrar com o Twitter
-						</a>
-						<a href="#" class="google btn">
-						  <i class="fa fa-google fa-fw"></i> Entrar com o Google+
-						</a>
-					  </div>
-				
-					  <div class="col">
-						<div class="hide-md-lg">
-						  <p>Ou faça login manualmente:</p>
-						</div>
-				
-						<input type="text" name="username" placeholder="Digite seu e-mail" required>
-						<input type="password" name="password" placeholder="Digite sua senha" required>
-						<input type="submit" value="Conecte-se">
-					  </div>
-				
-					</div>
-				  </form>
-				</div>
-				
-				<div class="bottom-container">
-				  <div class="row">
-					<div class="col">
-					  <a href="#" style="color:white" class="btn">Inscreva-se</a>
-					</div>
-					<div class="col">
-					  <a href="#" style="color:white" class="btn">Esqueceu a senha?</a>
-					</div>
-				</div>
-			 </div>		
-			
-					         	   	          
-          </section>
-	
-	
-        
-	<section class="menu">	
-            <nav class= "menuP">
-		<ul class="menuPlataformas">		 	
-                <li><a id="button" href="https://www.xbox.com/pt-BR" target="_blank" rel="noopener noreferrer"><!-- TARGET E BLANK PARA ABRIR PÁGINA EM NOVA ABA--><img src="img/icones/logotipo-do-xbox 2.svg" alt="Botão de Link Xbox"  class="logoxbox" class="botaoMenu"></a><!--class="name">Xbox PARA ADICIONAR O NOME NO-->                
-                <li><a id="button" href="#"><img src="img/icones/logoplaystation.png" alt="Botão de link playstation" class="logoplaystation"></a><li>
-                <li><a id="button" href="#"><img src="img/icones/logonintendo.png" alt="botão de Link Nintendo" class="logonintendo"></a><li>
-                <li><a id="button" href="#"><img src="img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo" class="logotipoplacadevideo"></a><li>
-                <li><a id="button" href="#"><img src="img/icones/lgotipocategorias.svg" alt="botão de link categorias" class="lgotipocategorias"></a><li>
-	        </ul>	
-            </nav>
-	</section>
-
-    </header>
-    
-    <main>
-     <section class="bannerPrincipal">
-            <a href="#"><img src="img/imagens/banner promoção.webp" alt="banner promocional" class="bannerPromo"></a>
-        </section>
-	
-
-	<section class="bannerDestaque">
-	        <div  class="bannerDestaque1">
-        	    <a href="#"><img src="img/imagens/bannerdestaque1.webp" class="bannerDestaqueTamanho"></a>
-	        </div>
-
-		<div class="bannerDestaque2">
-		    <a href="#"><img src="img/imagens/bannerdestaque2.webp" class="bannerDestaqueTamanho"></a>
-		</div>
-	</section>
-
-
-        <section class="destaquePlataforma">
-		<div class="escolhaPlataforma">
-            <a href="#"><img src="img/imagens/Resize_nint.webp" class="plataf-imagens"></a>
-            <a href="#"><img src="img/imagens/xbox-serie-x-s_preview_rev_1.png" class="plataf-imagens"></a>
-            <a href="#"><img src="img/imagens/Resize_ps5.webp" class="plataf-imagens"></a>
-		</div>
-        </section>
-
-        <section class="bannerSecundario">
-            <a href="#"><img src="img/imagens/bannerDown.svg" alt="banner Promociona Secundario" class="bannerDown"></a>
-        </section>
-
-	
-	<section>
-	 <div class="galeriaProdutos">
-            <div class="produtos">
-                <h2>Cadeira Gamer</h2>
-                <a href="#"><img src="img/produtos/cadeira_gamer_rgb_pctop_starlight.webp" class="imagemTamanho"></a>
-                <p class="precoAvista">R$ 809,10 à vista</p>
-                <p class="precoParcelado">R$ 899,00</p>
+      <!-- Botão para abrir o formulário de login modal -->
+      <!-- O Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="container">
+          <form action="/action_page.php">
+            <div class="row">
+              <h2 style="text-align:center">Faça login com as redes sociais ou manualmente</h2>
+            <div class="vl">
+              <span class="vl-innertext">ou</span>
             </div>
-            <div class="produtos">
-                <h2>Placa de Vídeo</h2>
-                <a href="#"><img src="img/produtos/placa_de_video_palit_nvidia_geforce_rtx_3090.webp" class="imagemTamanho"></a>
-                <p class="precoAvista">R$ 21.087,00 à vista</p>
-                <p class="precoParcelado">R$ 23.430,00</p>
-            </div>
-           <div class="produtos">
-                <h2>Volante Jogos</h2>
-                <a href="#"><img src="img/produtos/volante-gamer.webp" class="imagemTamanho"></a>
-                <p class="precoAvista">R$ 1.448,91à vista</p>
-                <p class="precoParcelado">R$ R$ 1.609,09</p>
-            </div>
-           <div class="produtos">
-                <h2>Jogo FIFA 23</h2>
-                <a href="#"><img src="img/produtos/fifa23prevenda.webp" class="imagemTamanho"></a>  
-                <p class="precoAvista">R$ 360,00 à vista</p>
-                <p class="precoParcelado">R$ 379,90</p>
-            </div class="produtos">
-            <div class="produtos">
-                <h2>Controle Xbox</h2>
-                <a href="#"><img src="img/produtos/controle_microsoft_xbox_series.webp" class="imagemTamanho"></a>
-                <p class="precoAvista">R$ 250,00 à vista</p>
-                <p class="precoParcelado">R$ 278,00</p>
-            </div>
-            <div class="produtos">
-                <h2>Monitor Gamer</h2>
-                <a href="#"><img src="img/produtos/Monitor Gamer LED, Tela de 24.webp" class="imagemTamanho"></a>
-                <p class="precoAvista">R$ 1.094,06 à vista</p>
-                <p class="precoParcelado">R$ 1.127,90</p>
-            </div>
-	</div>
-     </section>
- </main>
 
-    <!--newsletter-->
-        <section class="rodapeEmail">
-            <div class= "rodapePrincipalEmail">
-                </ul>
-                    <form class="rodapePrincipal-contatoForm" action="#"><fieldset>
-                            <legend class="rodapePrincipal-contatoForm-legend" for="email-contato">CADASTRE-SE E RECEBA OFERTAS EXCLUSIVAS</legend>
-                            <div class="rodapePrincipal-contatoForm-fieldset">
-                                <input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato"
-                                id="email-contato" placeholder="DIGITE SEU E-MAIL">
-                                <button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
-                            </div>
-                        </fieldset>
-                    </form>
+            <div class="col">
+              <a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Entrar com o Facebook</a>
+              <a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Entrar com o Twitter</a>
+              <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Entrar com o Google+</a>
+            </div>
+
+            <div class="col">
+                <div class="hide-md-lg">
+                  <p>ou faça login manualmente:</p>
                 </div>
-        </section>
-         
-			
-    <footer>  <!--rodapé-->
-        <section class="rodape">
-       	<div class= "rodapeFinal">
-            <div class="title">Institucional</div>
-                   
-                       <ul class="lista">
-                         <li><a href="#">Empresa</a></li>
-                         <li><a href="#">Segurança</a></li>
-                         <li><a href="#">Depoimentos dos clientes</a></li>
-                         <li><a href="#">Onde estamos</a></li>
-                      </ul>
-    		       </div>
-                </div>
-                	
-		<div class= "metodoDePagamento">
-           <div class="title">Formas de Pagamento</div> 
-             <div class="bandeiras">
-                    <img src="img/bandeirasDePagamentos/visa.svg" alt="Visa">
-                    <img src="img/bandeirasDePagamentos/mastercard.svg" alt="Mastercard">
-                    <img src="img/bandeirasDePagamentos/amex.svg" alt="American Express">
-                    <img src="img/bandeirasDePagamentos/elo.svg" alt="Elo">
-                    <img src="img/bandeirasDePagamentos/boleto.svg" alt="Boleto">
-                    <img src="img/bandeirasDePagamentos/paypal.svg" alt="Paypal">
-                    <img src="img/bandeirasDePagamentos/pix.svg" alt="Pix">
-          </div>
+                <input type="text" name="username" placeholder="Digite seu e-mail" required>
+                <input type="password" name="password" placeholder="Digite sua senha" required>
+                <input type="submit" value="Conecte-se">
+              </div>
+            </div>
+          </form>
         </div>
 
-            <div class="redesSociais">
-		      <ul class="redesSociais">
-                    <li class="title">Redes Sociais</li>
-                      <div class="redes">
-                    <a href="#"><img src="img/redesSociais/facebook.svg" alt="icone do facebook" class="redesSociaisIcones"></a>
-                    <a href="#"><img src="img/redesSociais/instagram.svg" alt="icone do instagram" class="redesSociaisIcones"></a>
-                    <a href="#"><img src="img/redesSociais/twitter.svg" alt="icone do twitter" class="redesSociaisIcones"></a>
-                    <a href="#"><img src="img/redesSociais/youtube.svg" alt="icone do youtube" class="redesSociaisIcones"></a>
-		        </div>     
-            </ul>    
-        </div>  
-      </section>
-    </footer> 
-	
-	<!-- script login midia social -->
+        <div class="bottom-container">
+          <div class="row">
+            <div class="col">
+              <a href="#" style="color:white" class="btn">Criar conta</a>
+            </div>
+            <div class="col">
+              <a href="login.html" style="color:white" class="btn">Esqueceu a senha?</a>
+            </div>
+          </div>
+        </div>
+    </section>
 
-	<script>
-			// Get the modal
-			var modal = document.getElementById('id01');
-			
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-			  if (event.target == modal) {
-				modal.style.display = "none";
-			  }
-			}
-			</script>
-			 
+    <section class="menu">
+      <nav class="menuP">
+        <ul class="menuPlataformas">
+          <li><a id="button" href="https://www.xbox.com/pt-BR" target="_blank" rel="noopener noreferrer">
+              <!-- TARGET E BLANK PARA ABRIR PÁGINA EM NOVA ABA--><img src="img/icones/logotipo-do-xbox 2.svg"
+                alt="Botão de Link Xbox" class="logoxbox" class="botaoMenu"></a><!--class="name">Xbox PARA ADICIONAR O NOME NO-->
+          <li><a id="button" href="#"><img src="img/icones/logoplaystation.png" alt="Botão de link playstation" class="logoplaystation"></a><li>
+          <li><a id="button" href="#"><img src="img/icones/logonintendo.png" alt="botão de Link Nintendo" class="logonintendo"></a><li>
+          <li><a id="button" href="#"><img src="img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo" class="logotipoplacadevideo"></a><li>
+          <li><a id="button" href="#"><img src="img/icones/lgotipocategorias.svg" alt="botão de link categorias" class="lgotipocategorias"></a><li>
+        </ul>
+      </nav>
+    </section>
+  </header>
 
-	<!-- script menu lateral -->
+  <main>
+    <section class="bannerPrincipal">
+      <a href="#"><img src="img/imagens/banner promoção.webp" alt="banner promocional" class="bannerPromo"></a>
+    </section>
 
-<script>
-function openNav() {
-  document.getElementById("menuLateralMobile").style.width = "100%"; /* DEFINIR LARGURA AO CLICAR NO BOTÃO MENU VERSÃO MOBILE */
-}
+    <section class="bannerDestaque">
+      <div class="bannerDestaque1">
+        <a href="#"><img src="img/imagens/bannerdestaque1.webp" class="bannerDestaqueTamanho"></a>
+      </div>
 
-function closeNav() {
-  document.getElementById("menuLateralMobile").style.width = "0";
-}
-</script>
-	<!-- <script src="index.js"></script>  -->
+      <div class="bannerDestaque2">
+        <a href="#"><img src="img/imagens/bannerdestaque2.webp" class="bannerDestaqueTamanho"></a>
+      </div>
+    </section>
 
-  </body>
+    <section class="destaquePlataforma">
+      <div class="escolhaPlataforma">
+        <a href="#"><img src="img/imagens/Resize_nint.webp" class="plataf-imagens"></a>
+        <a href="#"><img src="img/imagens/xbox-serie-x-s_preview_rev_1.png" class="plataf-imagens"></a>
+        <a href="#"><img src="img/imagens/Resize_ps5.webp" class="plataf-imagens"></a>
+      </div>
+    </section>
+
+    <section class="bannerSecundario">
+      <a href="#"><img src="img/imagens/bannerDown.svg" alt="banner Promociona Secundario" class="bannerDown"></a>
+    </section>
+    
+    <section>
+      <div class="galeriaProdutos">
+        <div class="produtos">
+          <h2>Cadeira Gamer</h2>
+          <a href="#"><img src="img/produtos/cadeira_gamer_rgb_pctop_starlight.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 809,10 à vista</p>
+          <p class="precoParcelado">R$ 899,00</p>
+        </div>
+        <div class="produtos">
+          <h2>Placa de Vídeo</h2>
+          <a href="#"><img src="img/produtos/placa_de_video_palit_nvidia_geforce_rtx_3090.webp"
+              class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 21.087,00 à vista</p>
+          <p class="precoParcelado">R$ 23.430,00</p>
+        </div>
+        <div class="produtos">
+          <h2>Volante Jogos</h2>
+          <a href="#"><img src="img/produtos/volante-gamer.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 1.448,91à vista</p>
+          <p class="precoParcelado">R$ R$ 1.609,09</p>
+        </div>
+        <div class="produtos">
+          <h2>Jogo FIFA 23</h2>
+          <a href="#"><img src="img/produtos/fifa23prevenda.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 360,00 à vista</p>
+          <p class="precoParcelado">R$ 379,90</p>
+        </div class="produtos">
+        <div class="produtos">
+          <h2>Controle Xbox</h2>
+          <a href="#"><img src="img/produtos/controle_microsoft_xbox_series.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 250,00 à vista</p>
+          <p class="precoParcelado">R$ 278,00</p>
+        </div>
+        <div class="produtos">
+          <h2>Monitor Gamer</h2>
+          <a href="#"><img src="img/produtos/Monitor Gamer LED, Tela de 24.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 1.094,06 à vista</p>
+          <p class="precoParcelado">R$ 1.127,90</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--newsletter-->
+  <section class="rodapeEmail">
+    <div class="rodapePrincipalEmail">
+      <form class="rodapePrincipal-contatoForm" action="#">
+        <fieldset>
+          <legend class="rodapePrincipal-contatoForm-legend" for="email-contato">CADASTRE-SE E RECEBA OFERTAS EXCLUSIVAS</legend>
+          <div class="rodapePrincipal-contatoForm-fieldset">
+            <input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato" id="email-contato"
+              placeholder="DIGITE SEU E-MAIL">
+            <button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+ <footer>
+  <section class="rodape">
+    <div class="rodapeFinal">
+      <p class="title">Institucional</p>
+        <ul class="lista">
+          <li><a href="#">Empresa</a></li>
+          <li><a href="#">Segurança</a></li>
+          <li><a href="#">Depoimentos dos clientes</a></li>
+          <li><a href="#">Onde estamos</a></li>
+        </ul>
+    </div>
+    
+    <div class="metodoDePagamento">
+      <p class="title">Formas de Pagamento</p>
+        <div class="bandeiras">
+          <img src="img/bandeirasDePagamentos/visa.svg" alt="Visa">
+          <img src="img/bandeirasDePagamentos/mastercard.svg" alt="Mastercard">
+          <img src="img/bandeirasDePagamentos/amex.svg" alt="American Express">
+          <img src="img/bandeirasDePagamentos/elo.svg" alt="Elo">
+          <img src="img/bandeirasDePagamentos/boleto.svg" alt="Boleto">
+          <img src="img/bandeirasDePagamentos/paypal.svg" alt="Paypal">
+          <img src="img/bandeirasDePagamentos/pix.svg" alt="Pix">
+        </div>
+    </div>
+
+    <div class="redesSociais">
+      <div class="redesSociais">
+        <p class="title">Redes Sociais</p>
+          <div class="redes">
+            <a href="#"><img src="img/redesSociais/facebook.svg" alt="icone do facebook" class="redesSociaisIcones"></a>
+            <a href="#"><img src="img/redesSociais/instagram.svg" alt="icone do instagram" class="redesSociaisIcones"></a>
+            <a href="#"><img src="img/redesSociais/twitter.svg" alt="icone do twitter" class="redesSociaisIcones"></a>
+            <a href="#"><img src="img/redesSociais/youtube.svg" alt="icone do youtube" class="redesSociaisIcones"></a>
+          </div>        
+    </div>
+   </section>
+  </footer>
+
+  <script src="index.js"></script>
+ </body>
 </html>
-
