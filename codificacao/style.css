@@ -13,6 +13,7 @@
   --bordaVertiLine: #ccc;
   --backgoundContainer:#f2f2f2; 
   --cinzamMenuLateral: #878282; 
+  --azure: #f0ffff;
 }
 
 body {
@@ -440,18 +441,30 @@ visibility: hidden;
 	width: 100%; /* Largura completa */
 	height: 100%; /* Altura toda*/
 	overflow: auto; /* Ative a rolagem, se necessário */
-	background-color: rgb(0, 0, 0); /* Cor alternativa */
-	background-color: rgba(0,0,0,0.4); /* Preto com opacidade*/
+	background-color: var(--preto_max); /* Cor alternativa */
+	background-color:  rgba(0,0,0,0.4); /* Preto com opacidade*/
 	padding-top: 60px;	
   }
-   
+
+  @media screen and (max-width: 480px) {
+    .textoEscolheLogin1 {
+      display: none;
+      padding: 2%;}  
+}
+
+@media screen and (min-width: 480px) {
+  .textoEscolheLogin2 {
+    display: none;
+    padding: 2%;}  
+}
+
   /* Botão de fechar o container */
   .close {
 	/* Posicione-o no canto superior direito fora do modal */  
     position: absolute;
     right: 25px;
     top: 0;
-    color: #f00;
+    color: var(--vermelho1);
     font-size: 35px;
     font-weight: bold;
 }
@@ -459,7 +472,7 @@ visibility: hidden;
   /* Botão Fechar ao passar o mouse */
   .close:hover,
   .close:focus {
-	color: red;
+	color: var(--vermelho1);
 	cursor: pointer;
   }
   
@@ -485,17 +498,20 @@ visibility: hidden;
 .container {
   position: relative;
   border-radius: 5px 5px  0px 0px;
-  background-color: #f2f2f2;
+  background-color: var(--backgoundContainer);
   padding: 20px 0 20px 0;
+  text-align: center;
+  
 }
 
 @media screen and (min-width: 1064px) {
 .container {
   border-radius: 5px 5px  0px 0px;
-  background-color: #f2f2f2;
+  background-color: var(--backgoundContainer);
   padding: 1%;
   margin-right: 25%;
-  margin-left: 25%;}
+  margin-left: 25%;
+  text-align: center;}
 }
 
 /* entradas de estilo e botões de link */
@@ -503,7 +519,7 @@ input,
 .btn {
   width: 100%;
   padding: 12px;
-  border-color: azure;
+  border-color: var(--azure);
   margin: 5px 0;
   opacity: 0.85;
   display: inline-block;
@@ -518,7 +534,7 @@ input:hover,
   opacity: 1;
 }
 
-/* add appropriate colors to fb, twitter and google buttons */
+/* adicionar propriedades dos botoes fb, twitter e google */
 .fb {
   background-color: var(--azulFacebook);
   color: var(--branco);
@@ -561,24 +577,6 @@ input[type=submit]:hover {
   clear: both;
 }
 
-/* Linha vertical (Vertical Line) */
-.vl {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-/* texto dentro do vertical line */
-.inner {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--corTextoVertLine);
-  border: 1px solid var(--bordaVertiLine);
-  border-radius: 50%;
-  padding: 8px 10px;
-}
-
 /* ocultar algum texto em telas médias e grandes */
 .hide-md-lg {
   display: none;
@@ -589,18 +587,19 @@ input[type=submit]:hover {
   text-align: center;
   background-color: var(--azulEmail);
   border-radius: 0px 0px 4px 4px;
+  color: var(--branco);
 }
 
 @media screen and (min-width: 1064px) {
   .bottom-container {
     text-align: center;
-    background-color: blue;
+    background-color: var(--azulEmail);
     border-radius: 0px 0px 4px 4px;
     margin-left: 25%;
+    color: var(--branco);
     margin-right: 25%}
+    
   }  
-
-
 
 /* Layout responsivo - quando a tela tiver menos de 450px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
 @media screen and (max-width: 480px) {
@@ -609,28 +608,27 @@ input[type=submit]:hover {
     background-color: var(--backgoundContainer);
     padding: 1%;
     margin: 5% 1% 1% 1%;
+    text-align: center;
   }
 
   .col {
     width: 100%;
     margin-top: 0;
   }
-  /*ocultar a vertical line */
-  .vl {
-    display: none;
-  }
+
   /* mostrar o texto oculto em telas pequenas */
   .hide-md-lg {
     display: block;
     text-align: center;
+    padding: 2%;
   }
   .bottom-container {
     text-align: center;
     background-color: var(--azulEmail);
     border-radius: 0px 0px 4px 4px;
     margin: 0px;
+    color: var(--branco);
   }
-
 }
 
                                           /* configuração menu lateral - mobile */
@@ -668,7 +666,7 @@ input[type=submit]:hover {
     padding: 20px 0px 20px 20px;
     text-decoration: none;
     font-size: 18px;
-    color: #FFFFFF;
+    color: var(--branco);
     display: block;
     transition: 0.3s;
 }
