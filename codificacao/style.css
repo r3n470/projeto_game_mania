@@ -446,14 +446,14 @@ visibility: hidden;
 	padding-top: 60px;	
   }
 
-  @media screen and (max-width: 480px) {
-    .textoEscolheLogin1 {
+  @media screen and (min-width: 480px) {
+    .textoEscolheLogin2 {
       display: none;
       padding: 2%;}  
-}
+  }
 
-@media screen and (min-width: 480px) {
-  .textoEscolheLogin2 {
+@media screen and (max-width: 480px) {
+  .textoEscolheLogin1 {
     display: none;
     padding: 2%;}  
 }
