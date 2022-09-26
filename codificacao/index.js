@@ -21,3 +21,19 @@
       document.getElementById("menuLateralMobile").style.width = "0";
     }
   
+/*carrosel banner principal*/
+    
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("bannerPromo");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // intervalo em milisegundos para alteração da imagem do banner Principal
+}
