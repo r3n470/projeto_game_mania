@@ -21,7 +21,7 @@
       document.getElementById("menuLateralMobile").style.width = "0";
     }
   
-/*carrosel banner principal*/
+/*carrossel banner principal*/
     
 var myIndex = 0;
 carousel();
