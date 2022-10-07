@@ -122,27 +122,25 @@
     <section class="destaquePlataforma"> 
     <div class="escolhaPlataforma">
 	<h2>Nintendo Switch</h2>
-	<a href="#"><img src="img/imagens/Resize_nint.webp" class="plataf-imagens"></a>
+	<a href="#"><img src="img/imagens/Resize_nint.webp" class="plataf-imagens1"></a>
 	<p class="precoAvista">R$ 3.899,99 à vista</p>
         <p class="precoParcelado">R$ 4.099,00</p>
       </div>	
 	
      <div class="escolhaPlataforma">
 	<h2>Xbox Serie X</h2>
-	<a href="#"><img src="img/imagens/xbox-serie-x-s_preview_rev_1.png" class="plataf-imagens"></a>
+	<a href="#"><img src="img/imagens/Resize_xbx.webp" class="plataf-imagens2"></a>
 	<p class="precoAvista">R$ 4.899,99 à vista</p>
         <p class="precoParcelado">R$ 5.099,00</p>
       </div>			  
         
      <div class="escolhaPlataforma">
 	<h2>Playstation 5</h2>
-	<a href="#"><img src="img/imagens/Resize_ps5.webp" class="plataf-imagens"></a>
+	<a href="#"><img src="img/imagens/Resize_ps5.webp" class="plataf-imagens3"></a>
 	<p class="precoAvista">R$ 4.399,99 à vista</p>
         <p class="precoParcelado">R$ 4.650,00</p>
      </div> 
 	
-
-
 
 <!-- CARROSSEL BOOTSTRAP VERSÃO MOBILE -->
 
@@ -154,21 +152,19 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="5000">
-	<h5>R$ 4.099,00</h5>
-	<p>R$ 3.899,99 à vista</p>
+	  <h5>R$ 4.099,00</h5>
+	  <p>R$ 3.899,99 à vista</p>
       <img src="img/imagens/Resize_nint.webp" class="d-block w-100" alt="nintendo">
+  <div class="carousel-caption d-none d-md-block">
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="2000">
+	<h5>R$ 5.099,00</h5>
+      <p>R$ 4.899,99 à vista</p>
+      <img src="img/imagens/Resize_xbx.webp" class="d-block w-100" alt="xbox">
       <div class="carousel-caption d-none d-md-block">
-	
-        
-      </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-	 <h5>R$ 5.099,00</h5>
-        <p>R$ 4.899,99 à vista</p>
-      <img src="img/imagens/xbox-serie-x-s_preview_rev_1.png" class="d-block w-100" alt="xbox">
-      <div class="carousel-caption d-none d-md-block">
-     </div>
-    </div>
+</div>
     <div class="carousel-item" data-bs-interval="2000">
 	 <h5>R$ 4.650,00</h5>
         <p>R$ 4.399,99 à vista</p>
@@ -177,14 +173,14 @@
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+ 	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button>
+  </button> 
 </div>
 
 
@@ -245,7 +241,7 @@
         <fieldset>
           <legend class="rodapePrincipal-contatoForm-legend" for="email-contato">CADASTRE-SE E RECEBA OFERTAS EXCLUSIVAS</legend>
           <div class="rodapePrincipal-contatoForm-fieldset">
-            <input class="rodapePrincipal-contatoForm-emailInput" type="email" id="email-contato" placeholder="DIGITE SEU E-MAIL">
+            <input id="campo-email" class="rodapePrincipal-contatoForm-emailInput" type="email"  placeholder="DIGITE SEU E-MAIL">
             <button onclick="cadastrarNewsletter()" class="rodapePrincipal-contatoForm-submit" >Enviar</button>
           </div>
         </fieldset>

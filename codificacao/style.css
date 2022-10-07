@@ -162,13 +162,31 @@ body {
 	font-weight: bold;
 }
 
-.plataf-imagens {
-    max-width: 80%;
+.plataf-imagens1 {
+    max-width: 90%;
 }
 
-.plataf-imagens:hover {
+.plataf-imagens2 {
+  max-width: 70%;
+}
+
+.plataf-imagens3 {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 481px) {
+.plataf-imagens1:hover {
     transform: scale(1.1);
 }
+
+.plataf-imagens2:hover {
+  transform: scale(1.1);
+}
+
+.plataf-imagens3:hover {
+  transform: scale(1.1);}
+}
+
 
 .bannerSecundario {
     margin: 2%;    
@@ -308,8 +326,8 @@ body {
     display: flex;
     align-items: stretch;
     flex-direction: column;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap
+  }
 
 .cabecalhoPrincipal {
     background-color: var(--preto_max);
@@ -395,8 +413,6 @@ display: none;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
-
     
 .galeriaProdutos {
  padding: 30px;
