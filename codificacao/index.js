@@ -40,11 +40,11 @@ function carousel() {
 
 
 
-/*função para cadatrar email*/
+/*função para cadastrar email*/
 
 function cadastrarNewsletter() {
 	let email = document.getElementById("campo-email").value
 
-	alert("Cadastro realizado com sucesso!!!")
+	alert("Cadastro realizado com sucesso!!")
 	console.log(email)
 }

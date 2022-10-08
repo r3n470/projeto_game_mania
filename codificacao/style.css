@@ -526,17 +526,17 @@ visibility: hidden;
   * {box-sizing: border-box}
 
 /* estilize o container*/
-.container {
+.contem {
+  margin: 0 50px 0px 50px;
   position: relative;
   border-radius: 5px 5px  0px 0px;
   background-color: var(--backgoundContainer);
-  padding: 20px 0 20px 0;
+  padding: 20px 10px 20px 10px;
   text-align: center;
-  
 }
 
 @media screen and (min-width: 1064px) {
-.container {
+.contem {
   border-radius: 5px 5px  0px 0px;
   background-color: var(--backgoundContainer);
   padding: 1%;
@@ -558,6 +558,7 @@ input,
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
   border-radius: 5px;
+  color: var(--branco)
 }
 
 input:hover,
@@ -593,7 +594,7 @@ input[type=submit]:hover {
 }
 
 /* Layout de duas colunas*/
-.col {
+.coluna {
   float: left;
   width: 50%;
   margin: auto;
@@ -602,7 +603,7 @@ input[type=submit]:hover {
 }
 
 /* Limpar floats após as colunas */
-.row:after {
+.rolar:after {
   content: "";
   display: table;
   clear: both;
@@ -614,15 +615,19 @@ input[type=submit]:hover {
 }
 
 /* botão container inferior (esqueceu senha- criar conta */
-.bottom-container {
+@media screen and (min-width: 481px) {
+.bottom-contem {
   text-align: center;
   background-color: var(--azulEmail);
   border-radius: 0px 0px 4px 4px;
   color: var(--branco);
+  margin: 0 50px 0px 50px;}
 }
 
+
+
 @media screen and (min-width: 1064px) {
-  .bottom-container {
+  .bottom-contem {
     text-align: center;
     background-color: var(--azulEmail);
     border-radius: 0px 0px 4px 4px;
@@ -634,15 +639,15 @@ input[type=submit]:hover {
 
 /* Layout responsivo - quando a tela tiver menos de 450px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
 @media screen and (max-width: 480px) {
-  .container {
+  .contem {
     border-radius: 5px 5px  0px 0px;
     background-color: var(--backgoundContainer);
     padding: 1%;
-    margin: 5% 1% 1% 1%;
+    margin: 5% 1% 0% 1%;
     text-align: center;
   }
 
-  .col {
+  .coluna {
     width: 100%;
     margin-top: 0;
   }
@@ -653,11 +658,11 @@ input[type=submit]:hover {
     text-align: center;
     padding: 2%;
   }
-  .bottom-container {
+  .bottom-contem {
     text-align: center;
     background-color: var(--azulEmail);
     border-radius: 0px 0px 4px 4px;
-    margin: 0px;
+    margin: 0% 1% 0% 1%;
     color: var(--branco);
   }
 }
