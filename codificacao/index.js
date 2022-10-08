@@ -15,11 +15,14 @@
 
       function openNav() {
       document.getElementById("menuLateralMobile").style.width = "100%"; /* DEFINIR LARGURA AO CLICAR NO BOTÃO MENU VERSÃO MOBILE */
+     
     }
 
     function closeNav() {
       document.getElementById("menuLateralMobile").style.width = "0";
     }
+
+  
   
 /*carrossel banner principal*/
     
@@ -37,6 +40,7 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 3000); // intervalo em milisegundos para alteração da imagem do banner Principal
 }
+
 
 
 

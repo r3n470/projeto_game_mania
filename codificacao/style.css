@@ -684,7 +684,7 @@ input[type=submit]:hover {
     top: 0;
     left: 0;
     background-color: var(--preto_max);
-    background-image: linear-gradient(var(--preto_max), var(--cinzamMenuLateral));
+    /*background-image: linear-gradient(var(--preto_max), var(--cinzamMenuLateral));*/
     overflow-x: hidden;
     padding-top: 10px;
     transition: 0.3s;
