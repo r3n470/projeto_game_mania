@@ -527,11 +527,11 @@ visibility: hidden;
 
 /* estilize o container*/
 .contem {
-  margin: 0 50px 0px 50px;
+  margin: 0 20px 0px 20px;
   position: relative;
   border-radius: 5px 5px  0px 0px;
   background-color: var(--backgoundContainer);
-  padding: 20px 10px 20px 10px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
 }
 
@@ -621,7 +621,7 @@ input[type=submit]:hover {
   background-color: var(--azulEmail);
   border-radius: 0px 0px 4px 4px;
   color: var(--branco);
-  margin: 0 50px 0px 50px;}
+  margin: 0 20px 0px 20px;}
 }
 
 
