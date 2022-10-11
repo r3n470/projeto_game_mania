@@ -52,6 +52,7 @@ function cadastrarNewsletter() {
 }
 
 
+// jQuery usado no rodapé para ocultar conteúdo dos itens Formas de Pagamento e  Redes Sociais
 
 $(document).ready(function(){
   $("button2").click(function(){
@@ -61,6 +62,57 @@ $(document).ready(function(){
 
 
   $("button3").click(function(){
-    $(".lista").toggle();
+    $(".redes").toggle();
   });
 });
+
+
+// outra forma de uso do jQuery, agora no conteúdo do campo Institucional
+
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
+
+
+// alterar comportamento do conteúdo de Institucional dependendo do tamanho de tela 
+
+
+$(window).resize(function(){    
+    if (window.matchMedia("(max-width: 480px)").matches) {
+    
+    $("#flip").show();
+    $("#pk").hide();
+    $("#panel").hide();
+      
+    }
+     else {
+      $("#flip").hide();
+      $("#pk").show();
+      $("#panel").show();
+    }
+}).resize()//  dispara no carregamento da página
+
+
+
+// alterar comportamento do conteúdo de Formas de Pagamento
+$(window).resize(function(){    
+    if (window.matchMedia("(max-width: 480px)").matches) {
+    
+    $("button2").show();
+    $("pk1").hide();
+    $(".bandeiras").hide();
+    
+      
+    }
+     else {
+      $("button2").hide();
+      $("pk1").show();	
+      $(".bandeiras").show();
+      
+    }
+}).resize()
+
+
