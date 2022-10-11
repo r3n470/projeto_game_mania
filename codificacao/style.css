@@ -187,7 +187,6 @@ body {
   transform: scale(1.1);}
 }
 
-
 .bannerSecundario {
     margin: 2%;    
 }
@@ -195,7 +194,7 @@ body {
 .bannerDown {
    border-radius: 1%;
    width: 100%;
-}
+} 
 
 .galeriaProdutos {
     padding: 30px;
@@ -294,28 +293,29 @@ body {
 
 /*RODAPÉ*/
 .rodape {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: var(--preto_max);
-    color: var(--branco);
-    padding: 1% 0% 3% 0%;
-    justify-content: space-around;
-    align-items: flex-start;
+  display: grid;
+  height: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--preto_max);
+  color: var(--branco);
+  padding: 1% 1% 1% 1%;
+  justify-items: stretch;
+  justify-content: space-evenly;
+  align-content: stretch;
 }
 
 .rodapeFinal {
     display: grid;
 }
 
-
 .metodoDePagamento {
-    display: grid;
-   
+  display: grid;
+  justify-items: center;
 }
 
 .redesSociais {
-    display: grid;
+  display: grid;
+  justify-content: space-evenly;
 }
 
 
@@ -424,40 +424,40 @@ display: none;
 }
 
 .rodapeFinal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: grid;
+  justify-items: center;
 }
-
 
 .rodape {
- display: flex;
- width: 100%;
- background-color: var(--preto_max);
- color: var(--branco);
- flex-direction: column;
- flex-wrap: wrap;
- align-items: center;
+  display: grid;
+  grid-template-columns: max-content;
+  height: 315px;
+  background-color: var(--preto_max);
+  color: var(--branco);
+  padding: 1%;
+  justify-items: center;
+  align-items: baseline;
 }
 
-.lista { 
-visibility: hidden;
-}
-
-.bandeiras { 
-visibility: hidden;
-}
-
-.metodoDePagamento {
+.lista {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -11%;
 }
 
+/*
+.bandeiras { 
+visibility: hidden;
+}*/
+
+.metodoDePagamento {
+  display: grid;
+}
+
+/*
 .redesSociais li {
  visibility: hidden;
-}
+}*/
 }
 
                                                     /* Login com redes sociais ou manual*/
@@ -637,7 +637,7 @@ input[type=submit]:hover {
     
   }  
 
-/* Layout responsivo - quando a tela tiver menos de 450px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
+/* Layout responsivo - quando a tela tiver menos de 480px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
 @media screen and (max-width: 480px) {
   .contem {
     border-radius: 5px 5px  0px 0px;
@@ -696,9 +696,6 @@ input[type=submit]:hover {
   width: 164px;
   align-self: center;
 }
-
-
-
 
 /*   Os links do menu de navegação */
 .menuLateral a {
@@ -873,7 +870,7 @@ input,
   text-align: center;}
 }
 
-
+/*alternar os carroséis das versoes desktop/tablet e mobile*/
 
 @media screen and (min-width: 481px) {  
  .carousel-inner {
@@ -885,5 +882,4 @@ display: none;}
     .escolhaPlataforma {
 display: none;}
 }
-
 

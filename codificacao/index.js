@@ -1,9 +1,9 @@
 
-  /*script login midia social */ 
+  //script login midia social 
 
     var modal = document.getElementById('id01');
 
-    /* Quando o usuário clicar em qualquer lugar fora do modal, feche-o*/
+    // Quando o usuário clicar em qualquer lugar fora do modal, feche-o
 
     window.onclick = function (event) {
       if (event.target == modal) {
@@ -11,10 +11,10 @@
       }
     }  
   
-  /*script menu lateral */
+  //script menu lateral 
 
       function openNav() {
-      document.getElementById("menuLateralMobile").style.width = "100%"; /* DEFINIR LARGURA AO CLICAR NO BOTÃO MENU VERSÃO MOBILE */
+      document.getElementById("menuLateralMobile").style.width = "100%"; // DEFINIR LARGURA AO CLICAR NO BOTÃO MENU VERSÃO MOBILE
      
     }
 
@@ -24,7 +24,7 @@
 
   
   
-/*carrossel banner principal*/
+//carrossel banner principal
     
 var myIndex = 0;
 carousel();
@@ -42,13 +42,25 @@ function carousel() {
 }
 
 
-
-
-/*função para cadastrar email*/
+//função para cadastrar email
 
 function cadastrarNewsletter() {
 	let email = document.getElementById("campo-email").value
 
-	alert("Cadastro realizado com sucesso!!")
+	alert("Obrigado por se cadastrar")
 	console.log(email)
 }
+
+
+
+$(document).ready(function(){
+  $("button2").click(function(){
+    $(".bandeiras").toggle();
+  });
+
+
+
+  $("button3").click(function(){
+    $(".lista").toggle();
+  });
+});
