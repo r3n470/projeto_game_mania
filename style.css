@@ -1,0 +1,888 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --preto_max:#080000;
+  --vermelho1:#f80000;
+  --vermelho2:#b30000;
+  --branco:#FFFFFF;   
+  --azulEmail: #3104B4;
+  --azulFacebook: #3B5998;
+  --azulTwitter: #55ACEE;
+  --vermelhoGoogle:#dd4b39;
+  --botaoEnviar: #FF9900;
+  --botaoEnviarHover: #262563;
+  --corTextoVertLine: #f1f1f1;
+  --bordaVertiLine: #ccc;
+  --backgoundContainer:#f2f2f2; 
+  --cinzamMenuLateral: #878282; 
+  --azure: #f0ffff;
+}
+
+/*versão desktop & tablet*/
+/*Header*/
+.cabecalhos {
+ display: flex;
+ flex-direction: column;
+}
+
+.cabecalhoPrincipal {
+ background-color: var(--preto_max);
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ height: 173px;
+}
+
+.cabecalho {
+ display: flex;
+ justify-content: space-around;
+ width: 50%;
+ align-items: center;
+}
+
+.logo {
+ width: 170px;
+ margin-top: 4%;
+}
+
+.areaCliente {
+ width: 50%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: flex-end;
+ margin-right: 5%;
+}
+
+.comprasLogin {
+ display: flex;
+ align-items: center;
+}
+
+.loginTamanho {
+ width: 100px;
+}
+
+.sacolaDeCompras {
+ width: 51px;
+}
+
+.botaoLogin {
+ background-color: var(--vermelho1);
+ border-color: var(--vermelho1);
+ width:0px;
+}
+
+.menuPlataformas {
+    display: flex;
+    background-color: var(--vermelho1);
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 10%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: var(--branco);
+}
+
+.menuPlataformas li:hover {
+    transform: scale(1.2);
+}
+
+.logoxbox {
+    width: 25px;
+}
+
+.logonintendo {
+    width: 30px;
+}
+
+.logoplaystation {
+    width: 30px;
+}
+
+.logotipoplacadevideo {
+    width: 45px;
+}
+
+.lgotipocategorias {
+    width: 30px;
+}
+
+/*Main*/
+.bannerPromo {
+    width: 100%;
+}
+
+.bannerDestaque {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2%;
+    justify-items: center;
+}
+
+.bannerDestaqueTamanho {
+    max-width: 90%;
+    border-radius: 1%;
+    margin-left: 5%;
+  }
+
+@media screen and (min-width: 481px) {
+.bannerDestaqueTamanho:hover {
+    transform: scale(1.1);}
+}
+
+.destaquePlataforma {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    justify-items: center;
+}
+
+
+.escolhaPlataforma {
+    display: inline-grid;
+    align-items: center;
+    justify-items: center;
+    align-content: space-between;
+    margin: 10% 0% 10% 0%;
+    vertical-align: top;
+    padding: 1% 0%;
+}
+
+.escolhaPlataforma:hover h2 {
+	font-size: 70%;
+    opacity: 0.2;
+}
+
+.escolhaPlataforma h2 {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.plataf-imagens1 {
+    max-width: 90%;
+}
+
+.plataf-imagens2 {
+  max-width: 70%;
+}
+
+.plataf-imagens3 {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 481px) {
+.plataf-imagens1:hover {
+    transform: scale(1.1);
+}
+
+.plataf-imagens2:hover {
+  transform: scale(1.1);
+}
+
+.plataf-imagens3:hover {
+  transform: scale(1.1);}
+}
+
+.bannerSecundario {
+    margin: 2%;    
+}
+
+.bannerDown {
+   border-radius: 1%;
+   width: 100%;
+} 
+
+.galeriaProdutos {
+    padding: 30px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.produtos {
+    display: inline-grid;
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: stretch;
+    vertical-align: top;
+    margin: 2% 2% 2.2% 0%;
+    padding: 1% 0%;
+}  
+  
+.produtos:hover h2 {
+	font-size: 70%;
+    opacity: 0.2;
+}
+
+.produtos h2 {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.precoAvista {
+	font-size: 80%;
+}
+
+.precoParcelado {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 2%;
+}
+
+.imagemTamanho {
+    width: 50%;
+}
+        
+/*NEWSLETTER*/
+.rodapePrincipalEmail {
+	margin-top: 2%;
+	background: var(--azulEmail);
+    max-width: 100%;
+	padding: 2% 20%;
+    color: var(--branco);   
+}
+
+.rodapePrincipal-contatoForm label[for=email-contato] {
+	font-weight: bold;
+	font-size: 2px;
+	color: var(--branco);
+	margin-bottom: 1%;
+	display: flex;
+}
+
+
+.rodapePrincipal-contatoForm-emailInput {
+  border-radius: 10px 0px 0px 10px;
+  padding: 5%;
+}
+
+.rodapePrincipal-contatoForm-submit {
+	    border-radius: 0px 10px 10px 0;
+	background-color: var(--vermelho1);
+	color: var(--branco);
+	cursor: pointer;	
+}
+
+.rodapePrincipal-contatoForm-emailInput {
+	outline: 0;
+	border: 1% solid var(--preto_max);
+	box-sizing: border-box;
+}
+
+.rodapePrincipalEmail  {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*RODAPÉ*/
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--preto_max);
+    color: var(--branco);
+    padding: 1% 2% 3% 2%;
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: start;
+}
+
+.rodapeFinal {
+    display: grid;
+}
+
+.metodoDePagamento {
+  display: grid;
+  justify-items: center;
+}
+
+.redesSociais {
+    display: grid;
+    justify-content: end;
+    height: 19px;
+}
+
+
+                                              /* versão mobile*/
+/*header*/
+@media screen and (max-width: 480px) {
+.cabecalhos {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap
+  }
+
+.cabecalhoPrincipal {
+    background-color: var(--preto_max);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 80px;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 12%;
+}
+
+.botaoMenuLateral {
+    margin-left: 2%;
+    width: 25%;
+}
+    
+ 
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+}
+
+.botaoPesquisa {
+ display: none;
+}
+    
+.areaCliente {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2%;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.comprasLogin {
+    display: flex;
+}
+
+.sacolaDeCompras {
+ width: 25px;
+}
+
+.loginTamanho {
+    width: 56px;
+}
+    
+.menu {
+ display: none;
+}
+    
+/*main*/
+.plataf-imagens {
+ margin: 10%;
+}
+
+.bannerPrincipal {
+display: none;
+}
+
+.bannerDestaque {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.destaquePlataforma {
+    padding: 30px;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+    
+.galeriaProdutos {
+ padding: 30px;
+ justify-content: center;
+ justify-items: center;
+ display: grid;
+ grid-gap: 30px;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.rodapeFinal {
+    display: grid;
+    justify-items: center;
+    height: 33px;
+}
+
+.rodape {
+  display: grid;
+  grid-template-columns: max-content;
+  height: 315px;
+  background-color: var(--preto_max);
+  color: var(--branco);
+  padding: 1%;
+  justify-items: center;
+  align-items: baseline;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+.bandeiras { 
+visibility: hidden;
+}*/
+
+.metodoDePagamento {
+    display: grid;
+    height: 33px;
+}
+
+/*
+.redesSociais li {
+ visibility: hidden;
+}*/
+}
+
+                                                    /* Login com redes sociais ou manual*/
+
+  /* O Modal (background) */  
+.modal {
+	display: none; /* Oculto por padrão */
+	position: fixed; /*Fique no lugar */
+	z-index: 1; /* Sente-se em cima */
+	left: 0;
+	top: 0;
+	width: 100%; /* Largura completa */
+	height: 100%; /* Altura toda*/
+	overflow: auto; /* Ative a rolagem, se necessário */
+	background-color: var(--preto_max); /* Cor alternativa */
+	background-color:  rgba(0,0,0,0.4); /* Preto com opacidade*/
+	padding-top: 60px;	
+  }
+
+  @media screen and (min-width: 480px) {
+    .textoEscolheLogin2 {
+      display: none;
+      padding: 2%;}  
+  }
+
+@media screen and (max-width: 480px) {
+  .textoEscolheLogin1 {
+    display: none;
+    padding: 2%;}  
+}
+
+  /* Botão de fechar o container */
+  .close {
+	/* Posicione-o no canto superior direito fora do modal */  
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: var(--vermelho1);
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+  /* Botão Fechar ao passar o mouse */
+  .close:hover,
+  .close:focus {
+	color: var(--vermelho1);
+	cursor: pointer;
+  }
+  
+  /* Adicionar animação de zoom */
+  .animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)}
+	to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+  } 	
+ 
+  * {box-sizing: border-box}
+
+/* estilize o container*/
+.contem {
+  margin: 0 20px 0px 20px;
+  position: relative;
+  border-radius: 5px 5px  0px 0px;
+  background-color: var(--backgoundContainer);
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1064px) {
+.contem {
+  border-radius: 5px 5px  0px 0px;
+  background-color: var(--backgoundContainer);
+  padding: 1%;
+  margin-right: 25%;
+  margin-left: 25%;
+  text-align: center;}
+}
+
+/* entradas de estilo e botões de link */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-color: var(--azure);
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+  border-radius: 5px;
+  color: var(--branco)
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* adicionar propriedades dos botoes fb, twitter e google */
+.fb {
+  background-color: var(--azulFacebook);
+  color: var(--branco);
+}
+
+.twitter {
+  background-color: var(--azulTwitter);
+  color: var(--branco);
+}
+
+.google {
+  background-color: var(--vermelhoGoogle);
+  color: var(--branco);
+}
+
+/* estilize o botão enviar */
+input[type=submit] {
+  background-color: var(--botaoEnviar);
+  color:var(--branco);
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--botaoEnviarHover);
+}
+
+/* Layout de duas colunas*/
+.coluna {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Limpar floats após as colunas */
+.rolar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ocultar algum texto em telas médias e grandes */
+.hide-md-lg {
+  display: none;
+}
+
+/* botão container inferior (esqueceu senha- criar conta */
+@media screen and (min-width: 481px) {
+.bottom-contem {
+  text-align: center;
+  background-color: var(--azulEmail);
+  border-radius: 0px 0px 4px 4px;
+  color: var(--branco);
+  margin: 0 20px 0px 20px;}
+}
+
+
+
+@media screen and (min-width: 1064px) {
+  .bottom-contem {
+    text-align: center;
+    background-color: var(--azulEmail);
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 25%;
+    color: var(--branco);
+    margin-right: 25%}
+    
+  }  
+
+/* Layout responsivo - quando a tela tiver menos de 480px de largura, faça as duas colunas empilharem uma sobre a outra em vez de uma ao lado da outra */
+@media screen and (max-width: 480px) {
+  .contem {
+    border-radius: 5px 5px  0px 0px;
+    background-color: var(--backgoundContainer);
+    padding: 1%;
+    margin: 5% 1% 0% 1%;
+    text-align: center;
+  }
+
+  .coluna {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* mostrar o texto oculto em telas pequenas */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+    padding: 2%;
+  }
+  .bottom-contem {
+    text-align: center;
+    background-color: var(--azulEmail);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0% 1% 0% 1%;
+    color: var(--branco);
+  }
+}
+
+                                          /* configuração menu lateral - mobile */
+@media screen and (min-width: 481px) {
+.botaoMenuLateral {
+   display: none;}
+
+}
+
+ /* O menu de navegação lateral */
+.menuLateral {
+    display: flex;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--preto_max);
+    /*background-image: linear-gradient(var(--preto_max), var(--cinzamMenuLateral));*/
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.3s;
+   /* border-radius: 0% 0% 5% 0%; */
+    flex-direction: column;
+}
+
+.menuLateralLogo {
+  width: 164px;
+  align-self: center;
+}
+
+/*   Os links do menu de navegação */
+.menuLateral a {
+    padding: 20px 0px 20px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--branco);
+    display: block;
+    transition: 0.3s;
+}
+
+.iconeMenuLateral {
+	width: 10%;
+}
+
+/* Ao passar o mouse sobre os links de navegação, altere sua cor */
+.sidenav a:hover {
+  color: var(--corTextoVertLine);
+}
+
+/* Posicione e estilize o botão Fechar (canto superior direito) */
+.menuLateral .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Conteúdo da página de estilo - use isso se quiser empurrar o conteúdo da página para a direita ao abrir a navegação lateral */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* Em telas menores, onde a altura é menor que 450px, altere o estilo do sidenav (menos preenchimento e tamanho de fonte menor) */
+@media screen and (max-height: 450px) {
+  .menuLateral {padding-top: 15px;}
+  .menuLateral a {font-size: 18px;}
+} 
+
+/* config página login esqueceu a senha */
+
+.form {
+	margin:  40px 0;
+	margin-left: 1%;
+}
+
+form label, form legend {
+	display:  block;
+	font-size:  18px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display:  block;
+	margin:  0 0 20px;
+	padding:  10px 25px;
+	width:  50%;
+}
+
+.checkbox {
+	margin:  20px 0;
+}
+
+.enviar {
+	width:  15%;
+	padding:  15px 0;
+	background:  var(--botaoEnviar);
+	color:  var(--branco);
+	font-weight:  bold;
+	font-size:  18px;
+	border:  none;
+	border-radius:  5px;
+	transition: 1s all;
+	cursor:  pointer;
+}
+
+.enviar:hover {
+    background: var(--azulEmail);
+    color: var(--branco);
+    transform: scale(1.1);
+}
+
+.dadosLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+.resetarSenha {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  background-color: var(--backgoundContainer);
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.contatoReset {
+ display:flex; 
+ flex-direction: row;
+ justify-content: flex-start;
+}
+
+                                                    /* versao mobile  */
+
+@media screen and (max-width: 481px) {  
+.resetarSenha {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    background-color: var(--backgoundContainer);
+    padding: 1%;
+    align-items: center;
+    box-shadow: 0px 0px 0px 15px var(--cinzamMenuLateral);
+    border-radius: 5px;
+}
+
+.dadosLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.manContatos {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 80%;
+}
+
+.contatoReset {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.enviar {
+    width: 50%;
+    padding: 15px 0;
+    background: var(--botaoEnviar);
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remover sublinhado das âncoras */
+  text-align: center;}
+}
+
+/*alternar os carroséis das versoes desktop/tablet e mobile*/
+
+@media screen and (min-width: 481px) {  
+ .carousel-inner {
+display: none;}
+}
+
+
+@media screen and (max-width: 481px) { 
+    .escolhaPlataforma {
+display: none;}
+}
+

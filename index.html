@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME MANIA | Você no Controle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- link jquery sem necessidade de baixar para a pasta do projeto-->
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="login.html">
+  <link rel="icon" type="imagem/png" href="img/icones/logofivicon.jpg" />  <!--icone na aba do navegador-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>  
+</head>
+
+<body>
+  <header class="cabecalhos">
+    <section class="cabecalhoPrincipal">
+      <div id="menuLateralMobile" class="menuLateral">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="img/icones/logoprincipal.svg" alt="Logotipo da Loja" class="menuLateralLogo">
+        <a href="#"><img src="img/icones/logotipo-do-xbox 2.svg" alt="Botão de Link Xbox" class="iconeMenuLateral">Xbox</a>
+        <a href="#"><img src="img/icones/logoplaystation.png" alt="Botão de link playstation" class="iconeMenuLateral">Playstation</a>
+        <a href="#"><img src="img/icones/logonintendo.png" alt="botão de Link Nintendo" class="iconeMenuLateral">Nintendo</a>
+        <a href="#"><img src="img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo" class="iconeMenuLateral"> Informática</a>
+        <a href="#"><img src="img/icones/lgotipocategorias.svg" alt="botão de link categorias" class="iconeMenuLateral">Categoria</a></div>
+
+      <!-- Use qualquer elemento para abrir a navegação lateral-->
+        <a class="botaoMenuLateral" onclick="openNav()"><img src="img/icones/menuLateral.svg" alt="Botão de menu"></a>
+      <div class="cabecalho">
+        <a href="index.html"><img src="img/icones/logoprincipal.svg" class="logo"></a>
+      </div>
+
+      <div class="areaCliente">
+        <div class="comprasLogin">
+          <a href="#"><img src="img/icones/sacola4.svg" alt="icone sacola" class="sacolaDeCompras"></a>
+          <a onclick="document.getElementById('id01').style.display='block'" style=><img src="img/icones/login (2).svg" alt="Botão login" class="loginTamanho"></a>
+        </div>
+      </div>
+
+      
+      <!-- Botão para abrir o formulário de login modal -->
+      <!-- O Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="contem">
+          <form action="/action_page.php">
+            <div class="rolar">
+              <h2 class="textoEscolheLogin1">Faça login com as redes sociais ou manualmente</h2>
+              <h2 class="textoEscolheLogin2">Faça login com as redes sociais</h2>
+              
+            
+			      <div class="coluna">  
+              <a href="#" class="fb btn"><i class="fa fa-facebook fa-fw"></i> Entrar com o Facebook</a>
+              <a href="#" class="twitter btn"><i class="fa fa-twitter fa-fw"></i> Entrar com o Twitter</a>
+              <a href="#" class="google btn"><i class="fa fa-google fa-fw"></i> Entrar com o Google+</a>
+            </div>
+
+            <div class="coluna">
+                <div class="hide-md-lg">
+                  <p>ou faça manualmente:</p>
+                </div>
+                <input type="text" name="username" placeholder="Digite seu e-mail" required>
+                <input type="password" name="password" placeholder="Digite sua senha" required>       
+                <input type="submit" value="Conecte-se">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="bottom-contem">
+          <div class="rolar">
+            <div class="coluna">
+              <a href="#" class="btn">Criar conta</a>
+            </div>
+            <div class="coluna">
+              <a href="login.html" class="btn">Esqueceu a senha?</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="menu">
+      <nav class="menuP">
+        <ul class="menuPlataformas">
+          <li><a id="button" href="https://www.xbox.com/pt-BR" target="_blank" rel="noopener noreferrer">
+              <!-- TARGET E BLANK PARA ABRIR PÁGINA EM NOVA ABA--><img src="img/icones/logotipo-do-xbox 2.svg"
+                alt="Botão de Link Xbox" class="logoxbox botaoMenu">Xbox</a>                   <!--class="name">Xbox PARA ADICIONAR O NOME NO-->
+          <li><a href="#"><img src="img/icones/logoplaystation.png" alt="Botão de link playstation" class="logoplaystation">Playstation</a><li>
+          <li><a href="#"><img src="img/icones/logonintendo.png" alt="botão de Link Nintendo" class="logonintendo">Nintendo</a><li>
+          <li><a href="#"><img src="img/icones/logotipoplacadevideo.svg" alt="Botão de link Placa de vídeo" class="logotipoplacadevideo">Informática</a><li>
+          <li><a href="#"><img src="img/icones/lgotipocategorias.svg" alt="botão de link categorias" class="lgotipocategorias">Categorias</a><li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="bannerPrincipal">
+      <a href="#"><img src="img/imagens/bannerPromocao1.webp" alt="banner promocional" class="bannerPromo"></a>
+      <a href="#"><img src="img/imagens/bannerPromocao2.webp" alt="banner promocional" class="bannerPromo"></a>
+      <a href="#"><img src="img/imagens/bannerPromocao3.webp" alt="banner promocional" class="bannerPromo"></a>
+    </section>
+
+    <section class="bannerDestaque">
+      <div class="bannerDestaque1">
+        <a href="#"><img src="img/imagens/bannerdestaque1.webp" class="bannerDestaqueTamanho"></a>
+      </div>
+
+      <div class="bannerDestaque2">
+        <a href="#"><img src="img/imagens/bannerdestaque2.webp" class="bannerDestaqueTamanho"></a>
+      </div>
+    </section>
+
+ <section class="destaquePlataforma"> 
+    <div class="escolhaPlataforma">
+	<h2>Nintendo Switch</h2>
+	<a href="#"><img src="img/imagens/Resize_nint.webp" class="plataf-imagens1"></a>
+	<p class="precoAvista">R$ 3.899,99 à vista</p>
+        <p class="precoParcelado">R$ 4.099,00</p>
+      </div>	
+	
+     <div class="escolhaPlataforma">
+	<h2>Xbox Serie X</h2>
+	<a href="#"><img src="img/imagens/Resize_xbx.webp" class="plataf-imagens2"></a>
+	<p class="precoAvista">R$ 4.899,99 à vista</p>
+        <p class="precoParcelado">R$ 5.099,00</p>
+      </div>			  
+        
+  <div class="escolhaPlataforma">
+	<h2>Playstation 5</h2>
+	<a href="#"><img src="img/imagens/Resize_ps5.webp" class="plataf-imagens3"></a>
+	<p class="precoAvista">R$ 4.399,99 à vista</p>
+        <p class="precoParcelado">R$ 4.650,00</p>
+     </div> 
+  </div>
+
+<!-- CARROSSEL BOOTSTRAP VERSÃO MOBILE -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+	  <h5>R$ 4.099,00</h5>
+	  <p>R$ 3.899,99 à vista</p>
+      <img src="img/imagens/Resize_nint.webp" class="d-block w-100" alt="nintendo">
+  <div class="carousel-caption d-none d-md-block">
+  </div>
+</div>
+
+<div class="carousel-item" data-bs-interval="2000">
+	<h5>R$ 5.099,00</h5>
+      <p>R$ 4.899,99 à vista</p>
+      <img src="img/imagens/Resize_xbx.webp" class="d-block w-100" alt="xbox">
+      <div class="carousel-caption d-none d-md-block">
+    </div>
+</div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+	 <h5>R$ 4.650,00</h5>
+        <p>R$ 4.399,99 à vista</p>
+      <img src="img/imagens/Resize_ps5.webp" class="d-block w-100" alt="playstation">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+
+ 	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> 
+</div>
+
+    </section>
+  
+
+    <section class="bannerSecundario">
+      <a href="#"><img src="img/imagens/bannerDown.svg" alt="banner Promociona Secundario" class="bannerDown"></a>
+    </section>  
+
+    <section>
+      <div class="galeriaProdutos">
+        <div class="produtos">
+          <h2>Cadeira Gamer</h2>
+          <a href="#"><img src="img/produtos/cadeira_gamer_rgb_pctop_starlight.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 809,10 à vista</p>
+          <p class="precoParcelado">R$ 899,00</p>
+        </div>
+        <div class="produtos">
+          <h2>Placa de Vídeo</h2>
+          <a href="#"><img src="img/produtos/placa_de_video_palit_nvidia_geforce_rtx_3090.webp"
+              class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 21.087,00 à vista</p>
+          <p class="precoParcelado">R$ 23.430,00</p>
+       </div>
+        <div class="produtos">
+          <h2>Volante Jogos</h2>
+          <a href="#"><img src="img/produtos/volante-gamer.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 1.448,91à vista</p>
+          <p class="precoParcelado">R$ R$ 1.609,09</p>
+        </div>
+        <div class="produtos">
+          <h2>Jogo FIFA 23</h2>
+          <a href="#"><img src="img/produtos/fifa23prevenda.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 360,00 à vista</p>
+          <p class="precoParcelado">R$ 379,90</p>
+        </div class="produtos">
+        <div class="produtos">
+          <h2>Controle Xbox</h2>
+          <a href="#"><img src="img/produtos/controle_microsoft_xbox_series.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 250,00 à vista</p>
+          <p class="precoParcelado">R$ 278,00</p>
+        </div>
+        <div class="produtos">
+          <h2>Monitor Gamer</h2>
+          <a href="#"><img src="img/produtos/Monitor Gamer LED, Tela de 24.webp" class="imagemTamanho"></a>
+          <p class="precoAvista">R$ 1.094,06 à vista</p>
+          <p class="precoParcelado">R$ 1.127,90</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--newsletter-->
+  <section class="rodapeEmail">
+    <div class="rodapePrincipalEmail">
+      <form class="rodapePrincipal-contatoForm" action="#">
+        <fieldset>
+          <legend class="rodapePrincipal-contatoForm-legend" for="email-contato">CADASTRE-SE E RECEBA OFERTAS EXCLUSIVAS</legend>
+          <div class="rodapePrincipal-contatoForm-fieldset">
+            <input id="campo-email" class="rodapePrincipal-contatoForm-emailInput" type="email"  placeholder="DIGITE SEU E-MAIL">
+            <button onclick="cadastrarNewsletter()" class="rodapePrincipal-contatoForm-submit" >Enviar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+ <footer>
+  <section class="rodape">
+    <div class="rodapeFinal">
+      <div id="flip"><p class="title">Institucional</p></div>
+	<div id="pk">Institucional</div>
+        <div id="panel"><ul class="lista">
+          <li><a href="#">Depoimentos dos clientes</a></li>
+          <li><a href="#">Onde estamos</a></li>
+          <li><a href="#">Segurança</a></li>
+          <li><a href="#">Empresa</a></li>
+        </ul>
+    </div> 
+  </div>	
+		
+    <div class="metodoDePagamento">
+	<pk1>Formas de Pagamento</pk1>
+      <button2><p class="title">Formas de Pagamento</p></button2>
+        <div class="bandeiras">
+          <img src="img/bandeirasDePagamentos/visa.svg" alt="Visa">
+          <img src="img/bandeirasDePagamentos/mastercard.svg" alt="Mastercard">
+          <img src="img/bandeirasDePagamentos/amex.svg" alt="American Express">
+          <img src="img/bandeirasDePagamentos/elo.svg" alt="Elo">
+          <img src="img/bandeirasDePagamentos/boleto.svg" alt="Boleto">
+          <img src="img/bandeirasDePagamentos/paypal.svg" alt="Paypal">
+          <img src="img/bandeirasDePagamentos/pix.svg" alt="Pix">
+        </div>
+    </div>
+
+    <div class="redesSociais">
+      <div class="redesSociais">
+        <button3><p class="title">Redes Sociais</p></div></button3>
+          <div class="redes">
+            <a href="#"><img src="img/redesSociais/facebook.svg" alt="icone do facebook" class="redesSociaisIcones"></a>
+            <a href="#"><img src="img/redesSociais/instagram.svg" alt="icone do instagram" class="redesSociaisIcones"></a>
+            <a href="#"><img src="img/redesSociais/twitter.svg" alt="icone do twitter" class="redesSociaisIcones"></a>
+            <a href="#"><img src="img/redesSociais/youtube.svg" alt="icone do youtube" class="redesSociaisIcones"></a>
+          </div>        
+        </div>
+      </section>
+  </footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+ </body>
+
+
+
+</html>
