@@ -55,13 +55,13 @@ function cadastrarNewsletter() {
 // jQuery usado no rodapé para ocultar conteúdo dos itens Formas de Pagamento e  Redes Sociais
 
 $(document).ready(function(){
-  $("button2").click(function(){
+  $("#b2").click(function(){
     $(".bandeiras").toggle();
   });
 
 
 
-  $("button3").click(function(){
+  $("#b3").click(function(){
     $(".redes").toggle();
   });
 });
@@ -77,42 +77,27 @@ $(document).ready(function(){
 
 
 
-// alterar comportamento do conteúdo de Institucional dependendo do tamanho de tela 
-
+// alterar VISIBILIDADE  do conteúdo de Institucional dependendo do tamanho de tela 
 
 $(window).resize(function(){    
     if (window.matchMedia("(max-width: 480px)").matches) {
-    
-    $("#flip").show();
-    $("#pk").hide();
     $("#panel").hide();
-      
     }
      else {
-      $("#flip").hide();
-      $("#pk").show();
-      $("#panel").show();
+      $("#panel, #flip").show();
     }
 }).resize()//  dispara no carregamento da página
 
 
 
-// alterar comportamento do conteúdo de Formas de Pagamento
+// alterar VISIBILIDADE do conteúdo de Formas de Pagamento
+
 $(window).resize(function(){    
     if (window.matchMedia("(max-width: 480px)").matches) {
-    
-    $("button2").show();
-    $("pk1").hide();
-    $(".bandeiras").hide();
-    
-      
+     $(".bandeiras").hide();
     }
      else {
-      $("button2").hide();
-      $("pk1").show();	
-      $(".bandeiras").show();
-      
+     $(".bandeiras").show();
     }
 }).resize()
-
 
